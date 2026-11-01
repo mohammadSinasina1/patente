@@ -1558,7 +1558,7 @@ if('serviceWorker' in navigator){window.addEventListener('load',function(){navig
   b.innerHTML='<b>📲 اپ را روی گوشی نصب کن</b><br>'
    +(ios?'در Safari دکمه اشتراک‌گذاری <span style="display:inline-block;border:1px solid #fff;border-radius:4px;padding:0 5px">⬆︎</span> پایین صفحه را بزن، بعد <b>«Add to Home Screen»</b> (افزودن به صفحه اصلی).'
          :'از منوی مرورگر ⋮ گزینه <b>«Install app»</b> یا <b>«Add to Home screen»</b> را بزن.')
-   +'<br><span style="opacity:.8;font-size:12.5px">بعد از نصب، اپ را از آیکونش روی صفحه اصلی باز کن (بدون اینترنت هم کار می‌کند).</span>'
+   +'<div style="margin-top:6px;background:rgba(255,255,255,.12);border-radius:8px;padding:6px 8px;font-size:12.5px">⚠️ اگر از داخل <b>تلگرام</b> یا اینستاگرام باز کردی، این گزینه را نمی‌بینی. '+(ios?'اول آیکون قطب‌نما 🧭 (باز کردن در Safari) را بزن.':'اول از منوی ⋮ گزینه «Open in Chrome» را بزن.')+'</div>'+'<span style="opacity:.8;font-size:12.5px">بعد از نصب، اپ را از آیکونش روی صفحه اصلی باز کن (بدون اینترنت هم کار می‌کند).</span>'
    +'<button onclick="try{localStorage.setItem(\'pq_a2hs_hide\',\'1\')}catch(e){};this.parentNode.remove()" style="position:absolute;top:6px;left:10px;background:none;border:none;color:#fff;font-size:18px;cursor:pointer">✕</button>';
   window.addEventListener('load',function(){document.body.insertBefore(b,document.body.firstChild);});
 })();
